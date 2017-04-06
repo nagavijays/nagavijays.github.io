@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+							#### Yeoman Code generator Framework
+							<br/>
+							<br/>
+							<br/>
+
+
+							###### - Vijay
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Agenda
+							- Why?
+							- Basic concepts
+							- Simple demo
+							- Q & A
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Assumptions
+							- Basic training/concepts
+							- No magic/logic.. Just a tool!!!
+							- For sake of the interest of audience, refrain questions until the end of section
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Why?
+							- Boilerplate code generation
+							- Save time in creating  similar code constructs
+							- Code generated based on best practices
+							- Yeoman : Node js opensource (BSD license) framework
+							- Yeoman : Huge community and generator ecosystem for webapps
+							- Yeoman : Custom generators for client and server
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Yeoman Basics
+							- 5000+ Community generators, 20 Yeoman maintained generators
+							- Custom generators
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Install Yeoman
+							<pre><code data-trim data-noescape> <i>sudo</i> npm install -g yo</code></pre>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Install public generators
+							<pre><code data-trim data-noescape> <i>sudo</i> npm install --g generator-h5bp</code></pre>
+
+							#### using Html5 generator
+							<pre><code data-trim data-noescape> yo h5bp</code></pre>
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Custom Generator
+							<pre><code data-trim data-noescape><i>sudo</i> npm install -g generator-generator</code></pre>
+
+							#### Using genertors
+							-	<pre><code data-trim data-noescape> yo generator</code></pre>
+							- <pre><code> yo generator:subgenerator name</code></pre>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Questions?
+
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+							#### Thankyou
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
